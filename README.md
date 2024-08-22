@@ -45,6 +45,19 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
+# setup
+
+npm install @nestjs/typeorm
+npm install typeorm
+npm install pg
+npm install @nestjs/cqrs
+
+nest g cl entities/person --no-spec
+nest g mo person
+nest g co person --no-spec
+nest g cl person/queries/impl/get-persons.query --no-spec
+nest g cl person/queries/handler/get-persons.handler --no-spec
+
 ## Test
 
 ```bash
